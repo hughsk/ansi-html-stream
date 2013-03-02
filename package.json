@@ -1,0 +1,36 @@
+{
+  "name": "ansi-html-stream",
+  "version": "0.0.1",
+  "description": "Stream ANSI terminal output to an HTML format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha -u tdd --reporter spec -c test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hughsk/ansi-html-stream.git"
+  },
+  "bin": {
+    "ansi-html": "bin/ansi-html"
+  },
+  "keywords": [
+    "ansi",
+    "html",
+    "stream",
+    "console"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)",
+  "license": "MIT",
+  "dependencies": {
+    "map-stream": "0.0.1",
+    "escape-html": "0.0.1",
+    "special-html": "0.0.1",
+    "xtend": "~1.0.3",
+    "split": "~0.1.0",
+    "clone": "git+ssh://git@github.com:hughsk/node-clone.git#buffercheck"
+  },
+  "devDependencies": {
+    "colors": "~0.6.0-1",
+    "mocha": "~1.7.4"
+  }
+}
