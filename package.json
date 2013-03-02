@@ -22,12 +22,12 @@
   "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)",
   "license": "MIT",
   "dependencies": {
-    "map-stream": "0.0.1",
+    "map-stream": "~0.0.1",
     "escape-html": "0.0.1",
     "special-html": "0.0.1",
     "xtend": "~1.0.3",
     "split": "~0.1.0",
-    "clone": "git+ssh://git@github.com:hughsk/node-clone.git#buffercheck"
+    "clone": "0.1.6"
   },
   "devDependencies": {
     "colors": "~0.6.0-1",
