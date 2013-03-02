@@ -1,6 +1,6 @@
 {
   "name": "ansi-html-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stream ANSI terminal output to an HTML format.",
   "main": "index.js",
   "scripts": {
