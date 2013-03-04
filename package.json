@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "colors": "~0.6.0-1",
-    "mocha": "~1.7.4"
+    "mocha": "~1.7.4",
+    "concat-stream": "~0.1.1"
   }
 }
