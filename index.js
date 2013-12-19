@@ -92,8 +92,6 @@ function createStream(options) {
         if ((style = colors[group][code]) !== undefined) break;
       }
 
-      if (typeof style === 'undefined') return
-
       if (!style) {
         stackIndex = group === 'resets' ? 0 : groupStack.indexOf(group)
         spanStack.splice(stackIndex)
