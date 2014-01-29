@@ -100,6 +100,25 @@ suite('ANSI Stream', function() {
     })
   })
 
+  suite('Handles underline', function(done) {
+    test('Underline with no colour', function(done) {
+      concatANSI('not underlined, ' + 'underlined'.underline + ', not underlined', {
+        chunked: false
+      }, function(err, data) {
+        assert.equal(data, 'not underlined, <span style="text-decoration:underline">underlined</span>, not underlined')
+      })
+      done()
+    })
+    test('Underline and colour', function(done) {
+      concatANSI('not underlined, ' + 'underlined & coloured'.red.underline + ', not underlined', {
+        chunked: false
+      }, function(err, data) {
+        assert.equal(data, 'not underlined, <span style="text-decoration:underline"><span style="color:#ff7e76">underlined &amp; coloured</span></span>, not underlined')
+      })
+      done()
+    })
+  })
+
   suite('Side-by-side colour changes', function() {
     testColorGroups(2, 2, function(col1, col2) {
       var string = [
