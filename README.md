@@ -1,4 +1,4 @@
-# ansi-html-stream [![Build Status](https://secure.travis-ci.org/hughsk/ansi-html-stream.png?branch=master)](http://travis-ci.org/hughsk/ansi-html-stream)
+# ansi-html-stream [![Build Status](https://secure.travis-ci.org/hughsk/ansi-html-stream.png?branch=master)](http://travis-ci.org/hughsk/ansi-html-stream) [ ![Codeship Status for hughsk/ansi-html-stream](https://codeship.io/projects/a0eb0ea0-30a9-0132-9637-7a1e36b51a42/status)](https://codeship.io/projects/39881)
 
 A through-stream that converts terminal output to HTML.
 
