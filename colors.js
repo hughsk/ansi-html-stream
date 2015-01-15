@@ -9,8 +9,17 @@ module.exports.inline = {
     , '33': { style: 'color:#f6fcc0' } // yellow
     , '34': { style: 'color:#9cd8fb' } // blue
     , '35': { style: 'color:#ff85f6' } // magenta
-    , '36': { style: 'color:#cfd0f8' } // cyan
+    , '36': { style: 'color:#0cfdf8' } // cyan
     , '37': { style: 'color:#eee' } // white
+    // +intensity
+    , '90': { style: 'color:#666' } // black
+    , '91': { style: 'color:#f77' } // red
+    , '92': { style: 'color:#7f7' } // green
+    , '93': { style: 'color:#ff7' } // yellow
+    , '94': { style: 'color:#77f' } // blue
+    , '95': { style: 'color:#f7f' } // magenta
+    , '96': { style: 'color:#7ff' } // cyan
+    , '97': { style: 'color:#fff' } // white
     , '39': false // default
   },
   backgrounds: {
@@ -22,6 +31,15 @@ module.exports.inline = {
     , '45': { style: 'background-color:#ff85f6' } // magenta
     , '46': { style: 'background-color:#cfd0f8' } // cyan
     , '47': { style: 'background-color:#eee' } // white
+    // +intensity
+    , '100': { style: 'background-color:#666' } // black
+    , '101': { style: 'background-color:#f77' } // red
+    , '102': { style: 'background-color:#7f7' } // green
+    , '103': { style: 'background-color:#ff7' } // yellow
+    , '104': { style: 'background-color:#77f' } // blue
+    , '105': { style: 'background-color:#f7f' } // magenta
+    , '106': { style: 'background-color:#7ff' } // cyan
+    , '107': { style: 'background-color:#eee' } // white
     , '49': false // default
   }
 };
@@ -39,6 +57,14 @@ module.exports.classes = {
     , '35': { 'class': 'ansi-fg-magenta' }
     , '36': { 'class': 'ansi-fg-cyan' }
     , '37': { 'class': 'ansi-fg-white' }
+    , '90': { 'class': 'ansi-fg-intense ansi-fg-black' }
+    , '91': { 'class': 'ansi-fg-intense ansi-fg-red' }
+    , '92': { 'class': 'ansi-fg-intense ansi-fg-green' }
+    , '93': { 'class': 'ansi-fg-intense ansi-fg-yellow' }
+    , '94': { 'class': 'ansi-fg-intense ansi-fg-blue' }
+    , '95': { 'class': 'ansi-fg-intense ansi-fg-magenta' }
+    , '96': { 'class': 'ansi-fg-intense ansi-fg-cyan' }
+    , '97': { 'class': 'ansi-fg-intense ansi-fg-white' }
     , '39': false // default
   },
   backgrounds: {
@@ -50,6 +76,14 @@ module.exports.classes = {
     , '45': { 'class': 'ansi-bg-magenta' }
     , '46': { 'class': 'ansi-bg-cyan' }
     , '47': { 'class': 'ansi-bg-white' }
+    , '100': { 'class': 'ansi-bg-intense ansi-bg-black' }
+    , '101': { 'class': 'ansi-bg-intense ansi-bg-red' }
+    , '102': { 'class': 'ansi-bg-intense ansi-bg-green' }
+    , '103': { 'class': 'ansi-bg-intense ansi-bg-yellow' }
+    , '104': { 'class': 'ansi-bg-intense ansi-bg-blue' }
+    , '105': { 'class': 'ansi-bg-intense ansi-bg-magenta' }
+    , '106': { 'class': 'ansi-bg-intense ansi-bg-cyan' }
+    , '107': { 'class': 'ansi-bg-intense ansi-bg-white' }
     , '49': false // default
   }
 };
