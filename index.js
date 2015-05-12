@@ -3,6 +3,7 @@ var escape = require('escape-html')
   , map = require('map-stream')
   , clone = require('clone')
   , extend = require('xtend')
+  , colors_base = require('./colors')
 
 /**
  * Returns a through-stream that converts ANSI escape
@@ -15,14 +16,13 @@ var escape = require('escape-html')
  */
 function createStream(options) {
   var options = options || {}
-    , colors = require('./colors')
     , groupStack = [] // Keeps track of opened span types.
     , spanStack = []  // Keeps track of opened span markup.
     , chunked = options.chunked && escape(options.chunked) || false
     , groups
     , stream
-
-  colors = clone(colors[options.classes ? 'classes' : 'inline'])
+    , colors = clone(colors_base[options.classes ? 'classes' : 'inline'])
+    
   colors = extend(colors, options.theme || {})
 
   colors.resets = colors.resets || [{'0':false}]
