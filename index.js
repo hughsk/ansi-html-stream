@@ -23,7 +23,7 @@ function createStream(options) {
     , stream
 
   colors = clone(colors[options.classes ? 'classes' : 'inline'])
-  colors = extend(colors, options.theme || {})
+  colors = extend(colors, clone(options.theme) || {})
 
   colors.resets = colors.resets || [{'0':false}]
 
